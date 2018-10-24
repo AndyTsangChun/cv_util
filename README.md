@@ -13,11 +13,11 @@ All dependency listed [here](https://github.com/AndyTsangChun/cvutil/blob/master
 ```
 pip install -r requirements.txt
 ```
-Key dependency version:
-py_util >= 0.0.0
-opencv-python >= 3.4.1.15
-opencv-contrib-python >= 3.4.1.15
-imutils >= 0.4.5
+Key dependency version:  
+py_util >= 0.0.0  
+opencv-python >= 3.4.1.15  
+opencv-contrib-python >= 3.4.1.15  
+imutils >= 0.4.5  
 
 ### Installing
 
