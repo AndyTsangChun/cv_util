@@ -12,7 +12,7 @@ _VERSION = '0.0.0'
 cwd = os.path.dirname(os.path.abspath(__file__))
 
 REQUIRED_PACKAGES = [
-	'py_util>=0.0.0',
+	'pyutil>=0.0.0',
     'opencv-python>=3.4.1.15',
 	'opencv-contrib-python>=3.4.1.15',
 	'imutils>=0.4.5',
@@ -22,6 +22,7 @@ REQUIRED_PACKAGES = [
 ]
 
 setup(name='cv_util',
+	packages=['cvutil'],
 	version=_VERSION,
 	description='Computer Vision Util Library',
 	install_requires=REQUIRED_PACKAGES,

@@ -1,4 +1,4 @@
-# cv_util
+# cvutil
 
 Python Computer Vision Util
 
@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-All dependency listed [here](https://github.com/AndyTsangChun/cv_util/blob/master/requirements.txt)
+All dependency listed [here](https://github.com/AndyTsangChun/cvutil/blob/master/requirements.txt)
 
 ```
 pip install -r requirements.txt
@@ -28,7 +28,7 @@ python setup.py install
 ### Usages
 Example:
 ```
-from cv_util import normalize
+from cvutil import normalize
 ```
 
 ## Built With
@@ -36,7 +36,7 @@ from cv_util import normalize
 * [Opencv](https://opencv.org/) - Open Source Computer Vision Library
 
 ## Change Log
-Please check from [here](https://github.com/AndyTsangChun/cv_util/blob/master/CHANGELOG.md)
+Please check from [here](https://github.com/AndyTsangChun/cvutil/blob/master/CHANGELOG.md)
 
 ## Known Issue
 N/A
