@@ -28,7 +28,7 @@ python setup.py install
 ### Usages
 Example:
 ```
-<how to use?>
+from cv_util import normalize
 ```
 
 ## Built With
