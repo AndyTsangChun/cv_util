@@ -21,8 +21,8 @@ REQUIRED_PACKAGES = [
 	'Pillow>=5.0.0'
 ]
 
-setup(name='cv_util',
-	packages=['cvutil'],
+setup(name='cvplus',
+	packages=['cvplus'],
 	version=_VERSION,
 	description='Computer Vision Util Library',
 	install_requires=REQUIRED_PACKAGES,
