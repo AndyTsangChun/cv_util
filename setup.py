@@ -7,7 +7,7 @@ try :
 except ImportError:
 	from distutils.core import setup,find_packages
 
-_VERSION = '0.0.0'
+_VERSION = '0.0.1'
 
 cwd = os.path.dirname(os.path.abspath(__file__))
 

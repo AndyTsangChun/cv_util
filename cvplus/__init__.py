@@ -18,3 +18,5 @@ from .img_util import PIL2CV
 from .img_util import CV2PIL
 from .img_util import getCenterPoint
 from .img_util import distanceOfpoints
+
+from .object import *
