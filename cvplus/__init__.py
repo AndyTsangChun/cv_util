@@ -19,4 +19,4 @@ from .img_util import CV2PIL
 from .img_util import getCenterPoint
 from .img_util import distanceOfpoints
 
-from .object import *
+from module import *
