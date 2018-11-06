@@ -17,13 +17,14 @@ class BoundingBox:
 
 	THIS OBJECT HAS 2 MODE, INT for exact coordinate and FLOAT for relative position
 	"""
-	def __init__(self, cx=0, cy=0, w=0, h=0, ymin=0, xmin=0, ymax=0, xmax=0, conf=None, classes=None, label=None, cname=None, pose=None, truncated=0, difficult=0, isCorners=False, isCoordinates=True, log=False, debug=False):
+	__slots__=['cx','cy','width','height','ymin','xmin','ymax','xmax','conf','classes','label','cname','pose','truncated','difficult']
+	def __init__(self, cx=0, cy=0, width=0, height=0, ymin=0, xmin=0, ymax=0, xmax=0, conf=None, classes=None, label=None, cname=None, pose=None, truncated=0, difficult=0, isCorners=False, isCoordinates=True, log=False, debug=False):
 		"""
 		Args:
 			cx (int/float): X-coordinate of bounding box center
 			cy (int/float): Y-coordinate of bounding box center
-			w (int/float): Width of bounding box
-			h (int/float): Height of bounding box
+			width (int/float): Width of bounding box
+			height (int/float): Height of bounding box
 			ymin (int/float): Y coordinate of Top-Left corner
 			xmin (int/float): X coordinate of Top-Left corner
 			ymax (int/float): Y coordinate of Bottom-Right corner
@@ -51,14 +52,14 @@ class BoundingBox:
 				self.xmin = int(xmin)
 				self.ymax = int(ymax)
 				self.xmax = int(xmax)
-				self.cx, self.cy, self.w, self.h = self.__corners2sizes(int(ymin), int(xmin), int(ymax), int(xmax), isCoordinates)
+				self.cx, self.cy, self.width, self.height = self.__corners2sizes(int(ymin), int(xmin), int(ymax), int(xmax), isCoordinates)
 			else:
-				assert (not(cx == cy == w == h == 0)), self.__logger.error("Invalid bounding box size parameters is given.")
+				assert (not(cx == cy == width == height == 0)), self.__logger.error("Invalid bounding box size parameters is given.")
 				self.cx = int(cx)
 				self.cy = int(cy)
-				self.w = int(w)
-				self.h = int(h)
-				self.ymin, self.xmin, self.ymax, self.xmax = self.__sizes2corners(int(cx), int(cy), int(w), int(h), isCoordinates)
+				self.width = int(width)
+				self.height = int(height)
+				self.ymin, self.xmin, self.ymax, self.xmax = self.__sizes2corners(int(cx), int(cy), int(width), int(height), isCoordinates)
 		else:
 			# relative position
 			if isCorners:
@@ -67,14 +68,14 @@ class BoundingBox:
 				self.xmin = xmin
 				self.ymax = ymax
 				self.xmax = xmax
-				self.cx, self.cy, self.w, self.h = self.__corners2sizes(ymin, xmin, ymax, xmax, isCoordinates)
+				self.cx, self.cy, self.width, self.height = self.__corners2sizes(ymin, xmin, ymax, xmax, isCoordinates)
 			else:
-				assert (not(cx == cy == w == h == 0)), self.__logger.error("Invalid bounding box size parameters is given.")				
+				assert (not(cx == cy == width == height == 0)), self.__logger.error("Invalid bounding box size parameters is given.")				
 				self.cx = cx
 				self.cy = cy
-				self.w = w
-				self.h = h
-				self.ymin, self.xmin, self.ymax, self.xmax = self.__sizes2corners(cx, cy, w, h, isCoordinates)
+				self.width = width
+				self.height = height
+				self.ymin, self.xmin, self.ymax, self.xmax = self.__sizes2corners(cx, cy, width, height, isCoordinates)
 
 		self.conf = conf
 		self.classes = classes
@@ -90,23 +91,23 @@ class BoundingBox:
 			self.getLabel()
 			self.getScore()
 
-	def __sizes2corners(self, cx, cy, w, h, isCoordinates=True):
+	def __sizes2corners(self, cx, cy, width, height, isCoordinates=True):
 		"""
 		Args:
 			cx (int): X-coordinate of bounding box center
 			cy (int): Y-coordinate of bounding box center
-			w (int): Width of bounding box
-			h (int): Height of bounding box
+			width (int): Width of bounding box
+			height (int): Height of bounding box
 		Returns:
 			ymin (int)- Y coordinate of Top-Left corner
 			xmin (int)- X coordinate of Top-Left corner
 			ymax (int)- Y coordinate of Bottom-Right corner
 			xmax (int)- X coordinate of Bottom-Right corner
 		"""
-		ymin = cy - h/2.
-		xmin = cx - w/2.
-		ymax = cy + h/2.
-		xmax = cx + w/2.
+		ymin = cy - height/2.
+		xmin = cx - width/2.
+		ymax = cy + height/2.
+		xmax = cx + width/2.
 
 		if isCoordinates:
 			return int(ymin), int(xmin), int(ymax), int(xmax)
@@ -123,18 +124,18 @@ class BoundingBox:
 		Returns:
 			cx (int)- X-coordinate of bounding box center
 			cy (int)- Y-coordinate of bounding box center
-			w (int)- Width of bounding box
-			h (int)- Height of bounding box
+			width (int)- Width of bounding box
+			height (int)- Height of bounding box
 		"""
-		w = xmax - xmin
-		h = ymax - ymin
-		cx = xmin + w/2.
-		cy = ymin + h/2.
+		width = xmax - xmin
+		height = ymax - ymin
+		cx = xmin + width/2.
+		cy = ymin + height/2.
 
 		if isCoordinates:
-			return int(cx), int(cy), int(w), int(h)
+			return int(cx), int(cy), int(width), int(height)
 		else:
-			return cx, cy, w, h
+			return cx, cy, width, height
 
 	def crop(self, image):
 		"""
