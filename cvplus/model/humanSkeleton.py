@@ -31,7 +31,7 @@ class HumanSkeleton2D:
 	def initModelDetails(self,image_size=(1,1)):
 		self.isFrontal = self.__checkPoseFacade()
 		# cal MHip, since its not estimated by the dataset
-		if partType="CVPlus" and 8 in self.body_parts and 11 in self.body_parts:
+		if partType=="CVPlus" and 8 in self.body_parts and 11 in self.body_parts:
 			jointId = 14
 			rhip = self.body_parts[8]
 			lhip = self.body_parts[11]

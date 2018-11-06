@@ -22,7 +22,7 @@ REQUIRED_PACKAGES = [
 ]
 
 setup(name='cvplus',
-	packages=['cvplus'],
+	packages=['cvplus','cvplus.model'],
 	version=_VERSION,
 	description='Computer Vision Util Library',
 	install_requires=REQUIRED_PACKAGES,
