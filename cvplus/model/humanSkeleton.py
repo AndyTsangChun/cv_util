@@ -26,6 +26,15 @@ class HumanSkeleton2D:
 		return self.__str__()
 
 	def addBodyParts(self, jointId, x, y, score, z=0):
+		"""
+		Add Body Parts
+		Args:
+			jointId(int): joint index(eg. 0 for nose), for exact index please refer to keyjoint model
+			x: x-coordinate of keyjoint
+			y: y-coordinate of keyjoint
+			z: z-coordinate of keyjoint
+			score : confidence score
+		"""
 		self.body_parts[jointId] = KeyJoint(jointId, x, y, z, score)
 
 	def initModelDetails(self,image_size=(1,1)):
