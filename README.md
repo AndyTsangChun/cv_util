@@ -14,6 +14,7 @@ All dependency listed [here](https://github.com/AndyTsangChun/cvplus/blob/master
 pip install -r requirements.txt
 ```
 Key dependency version:  
+numpy>=1.14.2
 py_util >= 0.0.0  
 opencv-python >= 3.4.1.15  
 opencv-contrib-python >= 3.4.1.15  
