@@ -2,7 +2,10 @@
 import os,sys
 import cv2, re
 import numpy as np
-from pyutil import PyLogger
+try:
+	from pyutil import PyLogger
+except ImportError:
+	from cvplus import PyLogger
 
 __author__ = "Andy Tsang"
 __credits__ = ["Andy Tsang"]

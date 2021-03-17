@@ -3,7 +3,6 @@
 import numpy as np
 import os,sys,copy
 import cv2
-from pyutil import PyLogger
 
 __author__ = "Andy Tsang"
 __credits__ = ["Andy Tsang"]
@@ -16,8 +15,6 @@ class BackgroundSubtractor:
 	Module perform background subtraction to get contours
 	"""
 	def __init__(self, log=False, debug=False):
-		# init logger
-		self.__logger = PyLogger(log=log,debug=debug)
 		self.__frameCount = 0
 		self.bgModel = None
 		self.contour_threshold = 3500

@@ -1,3 +1,5 @@
+from .py_logger import PyLogger
+
 from .color_util import genColors
 from .color_util import hsv2rgb
 from .color_util import rgb2hex

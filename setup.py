@@ -7,7 +7,7 @@ try :
 except ImportError:
 	from distutils.core import setup,find_packages
 
-_VERSION = '0.0.1'
+_VERSION = '0.0.2'
 
 cwd = os.path.dirname(os.path.abspath(__file__))
 
@@ -16,7 +16,7 @@ REQUIRED_PACKAGES = [
     'opencv-python>=3.4.1.15',
 	'opencv-contrib-python>=3.4.1.15',
 	'imutils>=0.4.5',
-	'numpy==1.14.2',
+	'numpy>=1.14.2',
 	'scipy>=1.0.0',
 	'Pillow>=5.0.0'
 ]
