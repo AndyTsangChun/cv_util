@@ -16,6 +16,7 @@ from .img_util import getDownSampleImage
 from .img_util import getCroppedImage
 from .img_util import npa2base64
 from .img_util import base642npa
+from .img_util import saveImgRGB
 from .img_util import PIL2CV
 from .img_util import CV2PIL
 from .img_util import getCenterPoint

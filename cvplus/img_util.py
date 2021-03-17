@@ -9,7 +9,7 @@ from PIL import Image
 
 __author__ = "Andy Tsang"
 __credits__ = ["Andy Tsang"]
-__version__ = "0.0.0"
+__version__ = "0.0.2"
 __maintainer__ = "Andy Tsang"
 __email__ = "atc1992andy@gmail.com"
 
@@ -105,6 +105,15 @@ def base642npa(b64, shape):
 	npa = np.reshape(np.frombuffer(base64.decodestring(b64), dtype=np.uint8),shape)
 
 	return npa
+
+def saveImgRGB(savePath, image):
+	"""
+	Save RGB image by cv2
+	Args:
+		image (numpy.array): image in RGB
+	"""
+	cv2.imwrite(savePath,cv2.cvtColor(image,cv2.COLOR_RGB2BGR))	
+
 
 def PIL2CV(image):
 	"""
