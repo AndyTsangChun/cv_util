@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to cvplus’s documentation! &#8212; cvplus 0.0.2 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-cvplus-s-documentation">
+<h1>Welcome to cvplus’s documentation!<a class="headerlink" href="#welcome-to-cvplus-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="module-cvplus.color_util">
+<span id="color-util"></span><h1>Color Util<a class="headerlink" href="#module-cvplus.color_util" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="cvplus.color_util.genColors">
+<code class="sig-prename descclassname"><span class="pre">cvplus.color_util.</span></code><code class="sig-name descname"><span class="pre">genColors</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isShuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/color_util.html#genColors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.color_util.genColors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a list of color in RGB</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>num (int): number of color to generate
+isShuffle (boolean): random shuffle the color or follow hsv sequence</p>
+</dd>
+<dt>Return:</dt><dd><p><strong>colors</strong> (boolean) - list of color code, in RGB</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.color_util.hsv2rgb">
+<code class="sig-prename descclassname"><span class="pre">cvplus.color_util.</span></code><code class="sig-name descname"><span class="pre">hsv2rgb</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/color_util.html#hsv2rgb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.color_util.hsv2rgb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert color space from HSV to RGB</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>h (float): Hue
+s (float): Saturation
+v (float): Value</p>
+</dd>
+<dt>Return:</dt><dd><ul class="simple">
+<li><p><strong>r</strong> (int) - Red</p></li>
+<li><p><strong>g</strong> (int) - Green</p></li>
+<li><p><strong>b</strong> (int) - Blue</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.color_util.rgb2hex">
+<code class="sig-prename descclassname"><span class="pre">cvplus.color_util.</span></code><code class="sig-name descname"><span class="pre">rgb2hex</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/color_util.html#rgb2hex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.color_util.rgb2hex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert RGB to color hex</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>r (int): Red
+g (int): Green
+b (int): Blue</p>
+</dd>
+<dt>Returns:</dt><dd><p><strong>hex</strong> (string) - Hex color code</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cvplus.cv_util">
+<span id="cv-util"></span><h1>CV Util<a class="headerlink" href="#module-cvplus.cv_util" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="cvplus.cv_util.bbox2location">
+<code class="sig-prename descclassname"><span class="pre">cvplus.cv_util.</span></code><code class="sig-name descname"><span class="pre">bbox2location</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bbox</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/cv_util.html#bbox2location"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.cv_util.bbox2location" title="Permalink to this definition">¶</a></dt>
+<dd><p>From bbox [x,y,width,height] to location [top,right,bot,left]</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>bbox (list): bounding box [x,y,width,height]</p>
+</dd>
+<dt>Returns:</dt><dd><p><strong>location</strong> (list) - coordinate [top,right,bot,left]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.cv_util.bbox_iou">
+<code class="sig-prename descclassname"><span class="pre">cvplus.cv_util.</span></code><code class="sig-name descname"><span class="pre">bbox_iou</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">box1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">box2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/cv_util.html#bbox_iou"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.cv_util.bbox_iou" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculating the IoU of two ht_vision.boundingBox
+Args:</p>
+<blockquote>
+<div><p>box1 (ht_vision.BoundingBox): Box 1
+box2 (ht_vision.BoundingBox): Box 2</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>iou</strong> (float) - Intersect over Union</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.cv_util.drawDashedLine">
+<code class="sig-prename descclassname"><span class="pre">cvplus.cv_util.</span></code><code class="sig-name descname"><span class="pre">drawDashedLine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dash_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/cv_util.html#drawDashedLine"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.cv_util.drawDashedLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw dashed line</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>image (np.array): image to draw on
+color (tuple): color code (R,G,B)
+start_pos (tuple): start coordinate
+end_pos (tuple): end coordinate
+width (int): line width
+dash_length (int): space between dash</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.cv_util.getTextBoxRatio">
+<code class="sig-prename descclassname"><span class="pre">cvplus.cv_util.</span></code><code class="sig-name descname"><span class="pre">getTextBoxRatio</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">box_width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/cv_util.html#getTextBoxRatio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.cv_util.getTextBoxRatio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return text box ratio</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): string of text wish to print
+box_width (int): Width of the background box
+font (int): cv2 font type
+thickness (int): string thickness</p>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>text_ratio</strong> (float) - text ratio for opencv</p></li>
+<li><p><strong>nh</strong> (int) - new height</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.cv_util.interval_overlap">
+<code class="sig-prename descclassname"><span class="pre">cvplus.cv_util.</span></code><code class="sig-name descname"><span class="pre">interval_overlap</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interval_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interval_b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/cv_util.html#interval_overlap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.cv_util.interval_overlap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the minium coordinate from 2 given interval</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>interval_a (list): Interval a
+interval_b (list): Interval b</p>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>min</strong> (float) - minium coordinate</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.cv_util.location2bbox">
+<code class="sig-prename descclassname"><span class="pre">cvplus.cv_util.</span></code><code class="sig-name descname"><span class="pre">location2bbox</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/cv_util.html#location2bbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.cv_util.location2bbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>From location [top,right,bot,left] to bbox [x,y,width,height]</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>location (list): coordinate [top,right,bot,left]</p>
+</dd>
+<dt>Returns:</dt><dd><p><strong>bbox</strong> (list) - bounding box [x,y,width,height]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cvplus.img_util">
+<span id="image-util"></span><h1>Image Util<a class="headerlink" href="#module-cvplus.img_util" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="cvplus.img_util.CV2PIL">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">CV2PIL</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#CV2PIL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.CV2PIL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert OpenCV image to PIL.image</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>image (numpy.array): return image in PIL image</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.PIL2CV">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">PIL2CV</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#PIL2CV"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.PIL2CV" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert PIL.image to OpenCV image</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>image (numpy.array): return image in numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.base642npa">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">base642npa</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#base642npa"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.base642npa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert image (string.base64) to numpy array</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>b64 (string): image in base64
+shape (tuple): shape of the image (h,w,c)</p>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>npa</strong> (numpy.array) - image in numpy array</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.distanceOfpoints">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">distanceOfpoints</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isAbs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#distanceOfpoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.distanceOfpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to get distance between points</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dx (float): change of x-axis
+dy (float): change of y-axis
+isAbs (boolean): is getting absolute value</p>
+</dd>
+<dt>Return:</dt><dd><ul class="simple">
+<li><p><strong>dist</strong> (float) - distance between two points</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.getCenterPoint">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">getCenterPoint</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bbox</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#getCenterPoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.getCenterPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to get the center point of a given bbox (top,right,bot,left)</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>bbox (list): coordinate [top,right,bot,left]</p>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>x</strong> (int) - x of center</p></li>
+<li><p><strong>y</strong> (int) - y of center</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.getCroppedImage">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">getCroppedImage</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">locations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isWithPadding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#getCroppedImage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.getCroppedImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function take image and bounding boxes return cropped images</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>image (numpy.array): image use for cropping (h,w,c)
+locations (numpy.array): face location information
+imageSize (int): size of the cropped image
+isWithPadding (boolean): the cropped image whether with padding</p>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>images</strong> (numpy.array) - array of cropped images (n,h,w,c)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.getDownSampleImage">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">getDownSampleImage</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">320</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#getDownSampleImage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.getDownSampleImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function take image and down sample to imageSize, while keeping the original ratio</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>image (numpy.array): image use for cropping (h,w,c)
+imageSize (int): target size</p>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>resized_image</strong> (numpy.array) - cropped image (h,w,c)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.normalize">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">normalize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#normalize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Basic normalization for image
+Args:</p>
+<blockquote>
+<div><p>image (np.array): original image range 0~255</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p><strong>image</strong> (np.array) - normalized image range 0.~1.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="cvplus.img_util.npa2base64">
+<code class="sig-prename descclassname"><span class="pre">cvplus.img_util.</span></code><code class="sig-name descname"><span class="pre">npa2base64</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">npa</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cvplus/img_util.html#npa2base64"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#cvplus.img_util.npa2base64" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert image (numpy.array) to base64</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>npa (numpy.array): image in numpy.arry</p>
+</dd>
+<dt>Returns:</dt><dd><p><strong>b64</strong> (string) - image in base64</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cvplus.model.BackgroundSubtractor">
+<span id="background-subtractor"></span><h1>Background Subtractor<a class="headerlink" href="#module-cvplus.model.BackgroundSubtractor" title="Permalink to this headline">¶</a></h1>
+<p>Module perform background subtraction to get contours</p>
+</div>
+<div class="section" id="module-cvplus.model.BoundingBox">
+<span id="boundingbox"></span><h1>BoundingBox<a class="headerlink" href="#module-cvplus.model.BoundingBox" title="Permalink to this headline">¶</a></h1>
+<p>Object Classes for Bounding Box, DEFAULT takes NON-CORNER parameters
+All coordinate DEFAULT represent in integer as required by some libraries(Python3+)</p>
+<p>THIS OBJECT HAS 2 MODE, INT for exact coordinate and FLOAT for relative position</p>
+</div>
+<div class="section" id="module-cvplus.model.VideoController">
+<span id="videocontroller"></span><h1>VideoController<a class="headerlink" href="#module-cvplus.model.VideoController" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="module-cvplus.model.HumanSkeleton2D">
+<span id="humanskeleton2d"></span><h1>HumanSkeleton2D<a class="headerlink" href="#module-cvplus.model.HumanSkeleton2D" title="Permalink to this headline">¶</a></h1>
+<p>Human SkeletonModel designed for 2Dimension space</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">cvplus</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Andy Tsang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

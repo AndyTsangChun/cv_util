@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cvplus.img_util &#8212; cvplus 0.0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for cvplus.img_util</h1><div class="highlight"><pre>
+<span></span><span class="ch">#! /usr/bin/env python</span>
+
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">misc</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s2">&quot;Andy Tsang&quot;</span>
+<span class="n">__credits__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Andy Tsang&quot;</span><span class="p">]</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;0.0.0&quot;</span>
+<span class="n">__maintainer__</span> <span class="o">=</span> <span class="s2">&quot;Andy Tsang&quot;</span>
+<span class="n">__email__</span> <span class="o">=</span> <span class="s2">&quot;atc1992andy@gmail.com&quot;</span>
+
+<div class="viewcode-block" id="normalize"><a class="viewcode-back" href="../../index.html#cvplus.img_util.normalize">[docs]</a><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Basic normalization for image</span>
+<span class="sd">    Args:</span>
+<span class="sd">        image (np.array): original image range 0~255</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        * **image** (np.array) - normalized image range 0.~1.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">image</span> <span class="o">/</span> <span class="mf">255.</span>
+    
+    <span class="k">return</span> <span class="n">image</span></div>
+
+<div class="viewcode-block" id="getDownSampleImage"><a class="viewcode-back" href="../../index.html#cvplus.img_util.getDownSampleImage">[docs]</a><span class="k">def</span> <span class="nf">getDownSampleImage</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">imageSize</span><span class="o">=</span><span class="mi">320</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Function take image and down sample to imageSize, while keeping the original ratio</span>
+<span class="sd">	</span>
+<span class="sd">	Args:</span>
+<span class="sd">		image (numpy.array): image use for cropping (h,w,c)</span>
+<span class="sd">		imageSize (int): target size</span>
+<span class="sd">	Returns:</span>
+<span class="sd">		* **resized_image** (numpy.array) - cropped image (h,w,c)</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="n">image_ratio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+	<span class="k">if</span> <span class="n">image_ratio</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+		<span class="n">resized_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="n">imageSize</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">imageSize</span><span class="o">/</span><span class="n">image_ratio</span><span class="p">)))</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="n">resized_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">imageSize</span><span class="o">*</span><span class="n">image_ratio</span><span class="p">),</span> <span class="n">imageSize</span><span class="p">))</span>
+
+	<span class="k">return</span> <span class="n">resized_image</span></div>
+
+
+<div class="viewcode-block" id="getCroppedImage"><a class="viewcode-back" href="../../index.html#cvplus.img_util.getCroppedImage">[docs]</a><span class="k">def</span> <span class="nf">getCroppedImage</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">locations</span><span class="p">,</span> <span class="n">imageSize</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">isWithPadding</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Function take image and bounding boxes return cropped images</span>
+<span class="sd">	</span>
+<span class="sd">	Args:</span>
+<span class="sd">		image (numpy.array): image use for cropping (h,w,c)</span>
+<span class="sd">		locations (numpy.array): face location information</span>
+<span class="sd">		imageSize (int): size of the cropped image</span>
+<span class="sd">		isWithPadding (boolean): the cropped image whether with padding</span>
+<span class="sd">	Returns:</span>
+<span class="sd">		* **images** (numpy.array) - array of cropped images (n,h,w,c)</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="n">new_images</span> <span class="o">=</span> <span class="p">[]</span>
+	<span class="k">if</span> <span class="n">image</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">locations</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">locations</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+		<span class="k">return</span>
+	<span class="k">for</span> <span class="n">loc</span> <span class="ow">in</span> <span class="n">locations</span><span class="p">:</span>
+		<span class="n">y</span> <span class="o">=</span> <span class="n">t</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+		<span class="n">r</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+		<span class="n">b</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+		<span class="n">x</span> <span class="o">=</span> <span class="n">l</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+		<span class="n">width</span> <span class="o">=</span> <span class="n">r</span><span class="o">-</span><span class="n">l</span>
+		<span class="n">height</span> <span class="o">=</span> <span class="n">b</span><span class="o">-</span><span class="n">t</span>
+		<span class="n">face_center</span> <span class="o">=</span> <span class="n">getCenterPoint</span><span class="p">(</span><span class="n">loc</span><span class="p">)</span>
+		<span class="n">face_center</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">face_center</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="nb">int</span><span class="p">(</span><span class="n">face_center</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+		<span class="k">if</span> <span class="n">isWithPadding</span><span class="p">:</span>
+			<span class="c1"># length(top,left,bot,right)</span>
+			<span class="n">lengths</span> <span class="o">=</span> <span class="p">[</span><span class="n">face_center</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">face_center</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">face_center</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">face_center</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+			<span class="n">min_length</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">lengths</span><span class="p">)</span>
+			<span class="n">crop_img</span> <span class="o">=</span> <span class="n">misc</span><span class="o">.</span><span class="n">imresize</span><span class="p">(</span><span class="n">image</span><span class="p">[(</span><span class="n">face_center</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">min_length</span><span class="p">):(</span><span class="n">face_center</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">min_length</span><span class="p">),</span> <span class="p">(</span><span class="n">face_center</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">min_length</span><span class="p">):(</span><span class="n">face_center</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">min_length</span><span class="p">)],</span> <span class="p">(</span><span class="n">imageSize</span><span class="p">,</span><span class="n">imageSize</span><span class="p">))</span>
+		<span class="k">else</span><span class="p">:</span>
+			<span class="n">crop_img</span> <span class="o">=</span> <span class="n">misc</span><span class="o">.</span><span class="n">imresize</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="n">y</span><span class="p">:(</span><span class="n">y</span><span class="o">+</span><span class="n">height</span><span class="p">),</span> <span class="n">x</span><span class="p">:(</span><span class="n">x</span><span class="o">+</span><span class="n">width</span><span class="p">)],</span> <span class="p">(</span><span class="n">imageSize</span><span class="p">,</span><span class="n">imageSize</span><span class="p">))</span>
+		<span class="n">new_images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">crop_img</span><span class="p">)</span>
+	<span class="n">new_images</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">new_images</span><span class="p">)</span>
+
+	<span class="k">return</span> <span class="n">new_images</span></div>
+
+<div class="viewcode-block" id="npa2base64"><a class="viewcode-back" href="../../index.html#cvplus.img_util.npa2base64">[docs]</a><span class="k">def</span> <span class="nf">npa2base64</span><span class="p">(</span><span class="n">npa</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Convert image (numpy.array) to base64</span>
+<span class="sd">	</span>
+<span class="sd">	Args:</span>
+<span class="sd">		npa (numpy.array): image in numpy.arry</span>
+<span class="sd">	Returns:</span>
+<span class="sd">		**b64** (string) - image in base64</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="k">return</span> <span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ascontiguousarray</span><span class="p">(</span><span class="n">npa</span><span class="p">)))</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="base642npa"><a class="viewcode-back" href="../../index.html#cvplus.img_util.base642npa">[docs]</a><span class="k">def</span> <span class="nf">base642npa</span><span class="p">(</span><span class="n">b64</span><span class="p">,</span> <span class="n">shape</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Convert image (string.base64) to numpy array</span>
+<span class="sd">	</span>
+<span class="sd">	Args:</span>
+<span class="sd">		b64 (string): image in base64</span>
+<span class="sd">		shape (tuple): shape of the image (h,w,c)</span>
+<span class="sd">	Returns:</span>
+<span class="sd">		* **npa** (numpy.array) - image in numpy array</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="n">npa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">decodestring</span><span class="p">(</span><span class="n">b64</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">),</span><span class="n">shape</span><span class="p">)</span>
+
+	<span class="k">return</span> <span class="n">npa</span></div>
+
+<div class="viewcode-block" id="PIL2CV"><a class="viewcode-back" href="../../index.html#cvplus.img_util.PIL2CV">[docs]</a><span class="k">def</span> <span class="nf">PIL2CV</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Convert PIL.image to OpenCV image</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		image (numpy.array): return image in numpy array</span>
+<span class="sd">	&quot;&quot;&quot;</span>	
+	<span class="n">image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+	<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_RGB2BGR</span><span class="p">)</span>
+
+	<span class="k">return</span> <span class="n">image</span></div>
+
+<div class="viewcode-block" id="CV2PIL"><a class="viewcode-back" href="../../index.html#cvplus.img_util.CV2PIL">[docs]</a><span class="k">def</span> <span class="nf">CV2PIL</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Convert OpenCV image to PIL.image</span>
+<span class="sd">	</span>
+<span class="sd">	Args:</span>
+<span class="sd">		image (numpy.array): return image in PIL image</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+	<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+
+	<span class="k">return</span> <span class="n">image</span>						</div>
+
+<div class="viewcode-block" id="getCenterPoint"><a class="viewcode-back" href="../../index.html#cvplus.img_util.getCenterPoint">[docs]</a><span class="k">def</span> <span class="nf">getCenterPoint</span><span class="p">(</span><span class="n">bbox</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Function to get the center point of a given bbox (top,right,bot,left)</span>
+<span class="sd">	</span>
+<span class="sd">	Args:</span>
+<span class="sd">		bbox (list): coordinate [top,right,bot,left]</span>
+<span class="sd">	Returns:</span>
+<span class="sd">		* **x** (int) - x of center</span>
+<span class="sd">		* **y** (int) - y of center</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="n">width</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">bbox</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+	<span class="n">height</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="n">bbox</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+	<span class="n">x</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">width</span> <span class="o">/</span> <span class="mi">2</span>
+	<span class="n">y</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">height</span> <span class="o">/</span> <span class="mi">2</span>
+
+	<span class="k">return</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span></div>
+
+<div class="viewcode-block" id="distanceOfpoints"><a class="viewcode-back" href="../../index.html#cvplus.img_util.distanceOfpoints">[docs]</a><span class="k">def</span> <span class="nf">distanceOfpoints</span><span class="p">(</span><span class="n">dx</span><span class="p">,</span><span class="n">dy</span><span class="p">,</span><span class="n">isAbs</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	Function to get distance between points</span>
+<span class="sd">	</span>
+<span class="sd">	Args:</span>
+<span class="sd">		dx (float): change of x-axis</span>
+<span class="sd">		dy (float): change of y-axis</span>
+<span class="sd">		isAbs (boolean): is getting absolute value</span>
+<span class="sd">	Return:</span>
+<span class="sd">		* **dist** (float) - distance between two points</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="k">if</span> <span class="n">isAbs</span><span class="p">:</span>
+		<span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">hypot</span><span class="p">(</span><span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="n">DoSTH</span><span class="o">=</span><span class="kc">True</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">cvplus</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Andy Tsang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

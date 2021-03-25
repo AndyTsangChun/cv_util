@@ -1,0 +1,2451 @@
+---------------------------------- page 1 ----------------------------------
+#### DownExpandingContainer('title')
+  StaticGroupedFlowables()
+    Paragraph('cvplus', style='title page title')
+         > (0,0,1,0,2) title page title
+           (0,0,0,0,2) body
+        SingleStyledText('cvplus')
+    Paragraph('Release 0.0.2', style='title page subtitle')
+         > (0,0,1,0,2) title page subtitle
+           (0,0,0,0,2) body
+        SingleStyledText('Release 0.0.2')
+    Paragraph('Andy Tsang', style='title page author')
+         > (0,0,1,0,2) title page author
+           (0,0,0,0,2) body
+        SingleStyledText('Andy Tsang')
+    Paragraph('Mar 17, 2021', style='title page date')
+         > (0,0,1,0,2) title page date
+           (0,0,0,0,2) body
+        SingleStyledText('Mar 17, 2021')
+---------------------------------- page i ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Table of Contents', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+      Field('Table of Contents')
+        StringField('Table of Contents')
+          SingleStyledText('Table of Contents')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    TableOfContentsSection(style='table of contents')
+         > (0,0,1,0,1) table of contents section
+           (0,0,0,1,1) chapter
+      TableOfContents()   table of contents
+           > (0,0,0,0,2) table of contents
+        TableOfContentsEntry('	Python Module Index	5')
+             > (0,0,0,1,2) toc level 1
+            ReferenceField('')
+                 > (0,0,0,1,4) toc entry number reference field
+                   (0,0,0,0,1) linked reference
+              SingleStyledText('')
+            Tab('	')
+            ReferenceField('Python Module Index')
+                 > (0,0,0,0,1) linked reference
+              SingleStyledText('Python Module Index')
+            Tab('	')
+            ReferenceField('5')
+                 > (0,0,0,0,1) linked reference
+              SingleStyledText('5')
+        TableOfContentsEntry('	Index	7')
+             > (0,0,0,1,2) toc level 1
+            ReferenceField('')
+                 > (0,0,0,1,4) toc entry number reference field
+                   (0,0,0,0,1) linked reference
+              SingleStyledText('')
+            Tab('	')
+            ReferenceField('Index')
+                 > (0,0,0,0,1) linked reference
+              StringField('Index')
+                SingleStyledText('Index')
+            Tab('	')
+            ReferenceField('7')
+                 > (0,0,0,0,1) linked reference
+              SingleStyledText('7')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		i')
+         > (0,0,0,0,2) footer
+        MixedStyledText('		i')
+          MixedStyledText('		i')
+            Tab('	')
+            Tab('	')
+            Field('i')
+              SingleStyledText('i')
+---------------------------------- page 1 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    DocumentTree()
+      StaticGroupedFlowables()   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <compound>
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.color_util.genColors ( nu...', id='cvplus.color_util.genColors')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.color_util.genColors ( nu...')
+                MixedStyledText('cvplus.color_util.genColors ( nu...')
+                  MixedStyledText('cvplus.color_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.color_util.')
+                  MixedStyledText('genColors', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('genColors')
+                  MixedStyledText(' ( num, isShuffle=False ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:None <desc_parameterlist>
+                    MixedStyledText(' ( num, isShuffle=False')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('num, isShuffle=False', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('num', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('num')   None:None <inline>
+                            SingleStyledText('num')
+                        SingleStyledText(', ')
+                        MixedStyledText('isShuffle=False', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('isShuffle')   None:None <inline>
+                            SingleStyledText('isShuffle')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('False')   None:None <inline>
+                            SingleStyledText('False')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Generate a list of color in RGB')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Generate a list of color in RGB')
+                MixedStyledText('Generate a list of color in RGB')
+                  SingleStyledText('Generate a list of color in RGB')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:4 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:4 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('num (int): number of color to ge...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('num (int): number of color to ge...')
+                      MixedStyledText('num (int): number of color to ge...')
+                        SingleStyledText('num (int): number of color to ge...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:6 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Return:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Return:')
+                      MixedStyledText('Return:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:6 <term>
+                        SingleStyledText('Return:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('colors (boolean) - list of color...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.genColors:7 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('colors (boolean) - list of color...')
+                      MixedStyledText('colors (boolean) - list of color...')
+                        MixedStyledText('colors', style='strong')   None:None <strong>
+                             > (0,0,1,0,1) strong
+                          SingleStyledText('colors')
+                        SingleStyledText(' (boolean) - list of color code,...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.color_util.hsv2rgb ( h, s...', id='cvplus.color_util.hsv2rgb')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.color_util.hsv2rgb ( h, s...')
+                MixedStyledText('cvplus.color_util.hsv2rgb ( h, s...')
+                  MixedStyledText('cvplus.color_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.color_util.')
+                  MixedStyledText('hsv2rgb', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('hsv2rgb')
+                  MixedStyledText(' ( h, s, v ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:None <desc_parameterlist>
+                    MixedStyledText(' ( h, s, v')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('h, s, v', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('h', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('h')   None:None <inline>
+                            SingleStyledText('h')
+                        SingleStyledText(', ')
+                        MixedStyledText('s', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('s')   None:None <inline>
+                            SingleStyledText('s')
+                        SingleStyledText(', ')
+                        MixedStyledText('v', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('v')   None:None <inline>
+                            SingleStyledText('v')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Convert color space from HSV to ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Convert color space from HSV to ...')
+                MixedStyledText('Convert color space from HSV to ...')
+                  SingleStyledText('Convert color space from HSV to ...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:5 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:5 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('h (float): Hue s (float): Satura...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('h (float): Hue s (float): Satura...')
+                      MixedStyledText('h (float): Hue s (float): Satura...')
+                        SingleStyledText('h (float): Hue s (float): Satura...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:9 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Return:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Return:')
+                      MixedStyledText('Return:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:9 <term>
+                        SingleStyledText('Return:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:8 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('r (int) - Red')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:8 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('r (int) - Red')
+                            MixedStyledText('r (int) - Red')
+                              MixedStyledText('r', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('r')
+                              SingleStyledText(' (int) - Red')
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('g (int) - Green')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:9 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('g (int) - Green')
+                            MixedStyledText('g (int) - Green')
+                              MixedStyledText('g', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('g')
+                              SingleStyledText(' (int) - Green')
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('b (int) - Blue')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.hsv2rgb:10 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('b (int) - Blue')
+                            MixedStyledText('b (int) - Blue')
+                              MixedStyledText('b', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('b')
+                              SingleStyledText(' (int) - Blue')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.color_util.rgb2hex ( r, g...', id='cvplus.color_util.rgb2hex')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.color_util.rgb2hex ( r, g...')
+                MixedStyledText('cvplus.color_util.rgb2hex ( r, g...')
+                  MixedStyledText('cvplus.color_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.color_util.')
+                  MixedStyledText('rgb2hex', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('rgb2hex')
+                  MixedStyledText(' ( r, g, b ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:None <desc_parameterlist>
+                    MixedStyledText(' ( r, g, b')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('r, g, b', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('r', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('r')   None:None <inline>
+                            SingleStyledText('r')
+                        SingleStyledText(', ')
+                        MixedStyledText('g', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('g')   None:None <inline>
+                            SingleStyledText('g')
+                        SingleStyledText(', ')
+                        MixedStyledText('b', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('b')   None:None <inline>
+                            SingleStyledText('b')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Convert RGB to color hex')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Convert RGB to color hex')
+                MixedStyledText('Convert RGB to color hex')
+                  SingleStyledText('Convert RGB to color hex')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:5 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:5 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('r (int): Red g (int): Green b (i...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('r (int): Red g (int): Green b (i...')
+                      MixedStyledText('r (int): Red g (int): Green b (i...')
+                        SingleStyledText('r (int): Red g (int): Green b (i...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:7 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:7 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('hex (string) - Hex color code')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/color_util.py:docstring of cvplus.color_util.rgb2hex:8 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('hex (string) - Hex color code')
+                      MixedStyledText('hex (string) - Hex color code')
+                        MixedStyledText('hex', style='strong')   None:None <strong>
+                             > (0,0,1,0,1) strong
+                          SingleStyledText('hex')
+                        SingleStyledText(' (string) - Hex color code')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.cv_util.bbox2location ( b...', id='cvplus.cv_util.bbox2location')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.cv_util.bbox2location ( b...')
+                MixedStyledText('cvplus.cv_util.bbox2location ( b...')
+                  MixedStyledText('cvplus.cv_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.cv_util.')
+                  MixedStyledText('bbox2location', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('bbox2location')
+                  MixedStyledText(' ( bbox ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:None <desc_parameterlist>
+                    MixedStyledText(' ( bbox')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('bbox', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('bbox', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('bbox')   None:None <inline>
+                            SingleStyledText('bbox')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('From bbox [x,y,width,height] to ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('From bbox [x,y,width,height] to ...')
+                MixedStyledText('From bbox [x,y,width,height] to ...')
+                  SingleStyledText('From bbox [x,y,width,height] to ...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:3 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:3 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('bbox (list): bounding box [x,y,w...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('bbox (list): bounding box [x,y,w...')
+                      MixedStyledText('bbox (list): bounding box [x,y,w...')
+                        SingleStyledText('bbox (list): bounding box [x,y,w...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:5 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:5 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('location (list) - coordinate [to...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox2location:6 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('location (list) - coordinate [to...')
+                      MixedStyledText('location (list) - coordinate [to...')
+                        MixedStyledText('location', style='strong')   None:None <strong>
+                             > (0,0,1,0,1) strong
+                          SingleStyledText('location')
+                        SingleStyledText(' (list) - coordinate [top,right,...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.cv_util.bbox_iou ( box1, ...', id='cvplus.cv_util.bbox_iou')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.cv_util.bbox_iou ( box1, ...')
+                MixedStyledText('cvplus.cv_util.bbox_iou ( box1, ...')
+                  MixedStyledText('cvplus.cv_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.cv_util.')
+                  MixedStyledText('bbox_iou', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('bbox_iou')
+                  MixedStyledText(' ( box1, box2 ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:None <desc_parameterlist>
+                    MixedStyledText(' ( box1, box2')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('box1, box2', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('box1', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('box1')   None:None <inline>
+                            SingleStyledText('box1')
+                        SingleStyledText(', ')
+                        MixedStyledText('box2', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('box2')   None:None <inline>
+                            SingleStyledText('box2')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Calculating the IoU of two ht_vi...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Calculating the IoU of two ht_vi...')
+                MixedStyledText('Calculating the IoU of two ht_vi...')
+                  SingleStyledText('Calculating the IoU of two ht_vi...')
+          StaticGroupedFlowables(style='block quote')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:None <block_quote>
+               > (0,0,1,0,1) block quote
+            Paragraph('box1 (ht_vision.BoundingBox): Bo...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:3 <paragraph>
+                 > (0,0,0,0,2) body
+                MixedStyledText('box1 (ht_vision.BoundingBox): Bo...')
+                  MixedStyledText('box1 (ht_vision.BoundingBox): Bo...')
+                    SingleStyledText('box1 (ht_vision.BoundingBox): Bo...')
+          DefinitionList()   None:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:5 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:5 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:6 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('iou (float) - Intersect over Uni...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.bbox_iou:6 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('iou (float) - Intersect over Uni...')
+                            MixedStyledText('iou (float) - Intersect over Uni...')
+                              MixedStyledText('iou', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('iou')
+                              SingleStyledText(' (float) - Intersect over Union')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		1')
+         > (0,0,0,0,2) footer
+        MixedStyledText('		1')
+          MixedStyledText('		1')
+            Tab('	')
+            Tab('	')
+            Field('1')
+              SingleStyledText('1')
+---------------------------------- page 2 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.cv_util.drawDashedLine ( ...', id='cvplus.cv_util.drawDashedLine')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.cv_util.drawDashedLine ( ...')
+                MixedStyledText('cvplus.cv_util.drawDashedLine ( ...')
+                  MixedStyledText('cvplus.cv_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.cv_util.')
+                  MixedStyledText('drawDashedLine', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('drawDashedLine')
+                  MixedStyledText(' ( image, color, start_pos, end_...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:None <desc_parameterlist>
+                    MixedStyledText(' ( image, color, start_pos, end_...')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('image, color, start_pos, end_pos...', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('image', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('image')   None:None <inline>
+                            SingleStyledText('image')
+                        SingleStyledText(', ')
+                        MixedStyledText('color', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('color')   None:None <inline>
+                            SingleStyledText('color')
+                        SingleStyledText(', ')
+                        MixedStyledText('start_pos', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('start_pos')   None:None <inline>
+                            SingleStyledText('start_pos')
+                        SingleStyledText(', ')
+                        MixedStyledText('end_pos', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('end_pos')   None:None <inline>
+                            SingleStyledText('end_pos')
+                        SingleStyledText(', ')
+                        MixedStyledText('width=1', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('width')   None:None <inline>
+                            SingleStyledText('width')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('1')   None:None <inline>
+                            SingleStyledText('1')
+                        SingleStyledText(', ')
+                        MixedStyledText('dash_length=8', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('dash_length')   None:None <inline>
+                            SingleStyledText('dash_length')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('8')   None:None <inline>
+                            SingleStyledText('8')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Draw dashed line')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Draw dashed line')
+                MixedStyledText('Draw dashed line')
+                  SingleStyledText('Draw dashed line')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:8 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:8 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('image (np.array): image to draw ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.drawDashedLine:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('image (np.array): image to draw ...')
+                      MixedStyledText('image (np.array): image to draw ...')
+                        SingleStyledText('image (np.array): image to draw ...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.cv_util.getTextBoxRatio (...', id='cvplus.cv_util.getTextBoxRatio')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.cv_util.getTextBoxRatio (...')
+                MixedStyledText('cvplus.cv_util.getTextBoxRatio (...')
+                  MixedStyledText('cvplus.cv_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.cv_util.')
+                  MixedStyledText('getTextBoxRatio', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('getTextBoxRatio')
+                  MixedStyledText(' ( text, box_width, font=2, thic...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:None <desc_parameterlist>
+                    MixedStyledText(' ( text, box_width, font=2, thic...')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('text, box_width, font=2, thickne...', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('text', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('text')   None:None <inline>
+                            SingleStyledText('text')
+                        SingleStyledText(', ')
+                        MixedStyledText('box_width', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('box_width')   None:None <inline>
+                            SingleStyledText('box_width')
+                        SingleStyledText(', ')
+                        MixedStyledText('font=2', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('font')   None:None <inline>
+                            SingleStyledText('font')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('2')   None:None <inline>
+                            SingleStyledText('2')
+                        SingleStyledText(', ')
+                        MixedStyledText('thickness=1', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('thickness')   None:None <inline>
+                            SingleStyledText('thickness')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('1')   None:None <inline>
+                            SingleStyledText('1')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Return text box ratio')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Return text box ratio')
+                MixedStyledText('Return text box ratio')
+                  SingleStyledText('Return text box ratio')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:6 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:6 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('text (str): string of text wish ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('text (str): string of text wish ...')
+                      MixedStyledText('text (str): string of text wish ...')
+                        SingleStyledText('text (str): string of text wish ...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:9 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:9 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:9 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('text_ratio (float) - text ratio ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:9 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('text_ratio (float) - text ratio ...')
+                            MixedStyledText('text_ratio (float) - text ratio ...')
+                              MixedStyledText('text_ratio', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('text_ratio')
+                              SingleStyledText(' (float) - text ratio for opencv')
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('nh (int) - new height')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.getTextBoxRatio:10 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('nh (int) - new height')
+                            MixedStyledText('nh (int) - new height')
+                              MixedStyledText('nh', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('nh')
+                              SingleStyledText(' (int) - new height')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.cv_util.interval_overlap ...', id='cvplus.cv_util.interval_overlap')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.cv_util.interval_overlap ...')
+                MixedStyledText('cvplus.cv_util.interval_overlap ...')
+                  MixedStyledText('cvplus.cv_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.cv_util.')
+                  MixedStyledText('interval_overlap', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('interval_overlap')
+                  MixedStyledText(' ( interval_a, interval_b ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:None <desc_parameterlist>
+                    MixedStyledText(' ( interval_a, interval_b')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('interval_a, interval_b', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('interval_a', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('interval_a')   None:None <inline>
+                            SingleStyledText('interval_a')
+                        SingleStyledText(', ')
+                        MixedStyledText('interval_b', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('interval_b')   None:None <inline>
+                            SingleStyledText('interval_b')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Return the minium coordinate fro...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Return the minium coordinate fro...')
+                MixedStyledText('Return the minium coordinate fro...')
+                  SingleStyledText('Return the minium coordinate fro...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:4 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:4 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('interval_a (list): Interval a in...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('interval_a (list): Interval a in...')
+                      MixedStyledText('interval_a (list): Interval a in...')
+                        SingleStyledText('interval_a (list): Interval a in...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:6 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:6 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:7 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('min (float) - minium coordinate')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.interval_overlap:7 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('min (float) - minium coordinate')
+                            MixedStyledText('min (float) - minium coordinate')
+                              MixedStyledText('min', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('min')
+                              SingleStyledText(' (float) - minium coordinate')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.cv_util.location2bbox ( l...', id='cvplus.cv_util.location2bbox')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.cv_util.location2bbox ( l...')
+                MixedStyledText('cvplus.cv_util.location2bbox ( l...')
+                  MixedStyledText('cvplus.cv_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.cv_util.')
+                  MixedStyledText('location2bbox', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('location2bbox')
+                  MixedStyledText(' ( location ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:None <desc_parameterlist>
+                    MixedStyledText(' ( location')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('location', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('location', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('location')   None:None <inline>
+                            SingleStyledText('location')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('From location [top,right,bot,lef...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('From location [top,right,bot,lef...')
+                MixedStyledText('From location [top,right,bot,lef...')
+                  SingleStyledText('From location [top,right,bot,lef...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:3 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:3 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('location (list): coordinate [top...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('location (list): coordinate [top...')
+                      MixedStyledText('location (list): coordinate [top...')
+                        SingleStyledText('location (list): coordinate [top...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:5 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:5 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('bbox (list) - bounding box [x,y,...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/cv_util.py:docstring of cvplus.cv_util.location2bbox:6 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('bbox (list) - bounding box [x,y,...')
+                      MixedStyledText('bbox (list) - bounding box [x,y,...')
+                        MixedStyledText('bbox', style='strong')   None:None <strong>
+                             > (0,0,1,0,1) strong
+                          SingleStyledText('bbox')
+                        SingleStyledText(' (list) - bounding box [x,y,widt...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.CV2PIL ( image )...', id='cvplus.img_util.CV2PIL')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.CV2PIL ( image )...')
+                MixedStyledText('cvplus.img_util.CV2PIL ( image )...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('CV2PIL', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('CV2PIL')
+                  MixedStyledText(' ( image ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:None <desc_parameterlist>
+                    MixedStyledText(' ( image')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('image', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('image', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('image')   None:None <inline>
+                            SingleStyledText('image')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Convert OpenCV image to PIL.imag...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Convert OpenCV image to PIL.imag...')
+                MixedStyledText('Convert OpenCV image to PIL.imag...')
+                  SingleStyledText('Convert OpenCV image to PIL.imag...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:3 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:3 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('image (numpy.array): return imag...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.CV2PIL:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('image (numpy.array): return imag...')
+                      MixedStyledText('image (numpy.array): return imag...')
+                        SingleStyledText('image (numpy.array): return imag...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.PIL2CV ( image )...', id='cvplus.img_util.PIL2CV')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.PIL2CV ( image )...')
+                MixedStyledText('cvplus.img_util.PIL2CV ( image )...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('PIL2CV', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('PIL2CV')
+                  MixedStyledText(' ( image ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:None <desc_parameterlist>
+                    MixedStyledText(' ( image')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('image', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('image', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('image')   None:None <inline>
+                            SingleStyledText('image')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Convert PIL.image to OpenCV imag...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Convert PIL.image to OpenCV imag...')
+                MixedStyledText('Convert PIL.image to OpenCV imag...')
+                  SingleStyledText('Convert PIL.image to OpenCV imag...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:3 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:3 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('image (numpy.array): return imag...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.PIL2CV:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('image (numpy.array): return imag...')
+                      MixedStyledText('image (numpy.array): return imag...')
+                        SingleStyledText('image (numpy.array): return imag...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.base642npa ( b64...', id='cvplus.img_util.base642npa')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.base642npa ( b64...')
+                MixedStyledText('cvplus.img_util.base642npa ( b64...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('base642npa', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('base642npa')
+                  MixedStyledText(' ( b64, shape ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:None <desc_parameterlist>
+                    MixedStyledText(' ( b64, shape')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('b64, shape', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('b64', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('b64')   None:None <inline>
+                            SingleStyledText('b64')
+                        SingleStyledText(', ')
+                        MixedStyledText('shape', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('shape')   None:None <inline>
+                            SingleStyledText('shape')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Convert image (string.base64) to...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Convert image (string.base64) to...')
+                MixedStyledText('Convert image (string.base64) to...')
+                  SingleStyledText('Convert image (string.base64) to...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:4 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:4 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('b64 (string): image in base64 sh...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('b64 (string): image in base64 sh...')
+                      MixedStyledText('b64 (string): image in base64 sh...')
+                        SingleStyledText('b64 (string): image in base64 sh...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:6 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:6 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:7 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('npa (numpy.array) - image in num...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.base642npa:7 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('npa (numpy.array) - image in num...')
+                            MixedStyledText('npa (numpy.array) - image in num...')
+                              MixedStyledText('npa', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('npa')
+                              SingleStyledText(' (numpy.array) - image in numpy ...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.distanceOfpoints...', id='cvplus.img_util.distanceOfpoints')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.distanceOfpoints...')
+                MixedStyledText('cvplus.img_util.distanceOfpoints...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('distanceOfpoints', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('distanceOfpoints')
+                  MixedStyledText(' ( dx, dy, isAbs=True ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:None <desc_parameterlist>
+                    MixedStyledText(' ( dx, dy, isAbs=True')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('dx, dy, isAbs=True', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('dx', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('dx')   None:None <inline>
+                            SingleStyledText('dx')
+                        SingleStyledText(', ')
+                        MixedStyledText('dy', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('dy')   None:None <inline>
+                            SingleStyledText('dy')
+                        SingleStyledText(', ')
+                        MixedStyledText('isAbs=True', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('isAbs')   None:None <inline>
+                            SingleStyledText('isAbs')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('True')   None:None <inline>
+                            SingleStyledText('True')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Function to get distance between...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Function to get distance between...')
+                MixedStyledText('Function to get distance between...')
+                  SingleStyledText('Function to get distance between...')
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('cvplus, Release 0.0.2')
+         > (0,0,0,0,2) header
+        MixedStyledText('cvplus, Release 0.0.2')
+          MixedStyledText('cvplus, Release 0.0.2')
+            Field('cvplus')
+              SingleStyledText('cvplus')
+            SingleStyledText(', ')
+            Field('Release 0.0.2')
+              SingleStyledText('Release 0.0.2')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('2		Chapter ​.  ​')
+         > (0,0,0,0,2) footer
+        MixedStyledText('2		Chapter ​.  ​')
+          MixedStyledText('2		Chapter ​.  ​')
+            Field('2')
+              SingleStyledText('2')
+            Tab('	')
+            Tab('	')
+            StringField('Chapter')
+              SingleStyledText('Chapter')
+            SingleStyledText(' ')
+            Field('​')
+              SingleStyledText('​')
+            SingleStyledText('.  ')
+            Field('​')
+              SingleStyledText('​')
+---------------------------------- page 3 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      (continued) LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        (continued) StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:None <desc_content>
+             > (0,0,2,0,3) object description content
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:5 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:5 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('dx (float): change of x-axis dy ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('dx (float): change of x-axis dy ...')
+                      MixedStyledText('dx (float): change of x-axis dy ...')
+                        SingleStyledText('dx (float): change of x-axis dy ...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:7 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Return:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Return:')
+                      MixedStyledText('Return:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:7 <term>
+                        SingleStyledText('Return:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:8 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('dist (float) - distance between ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.distanceOfpoints:8 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('dist (float) - distance between ...')
+                            MixedStyledText('dist (float) - distance between ...')
+                              MixedStyledText('dist', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('dist')
+                              SingleStyledText(' (float) - distance between two ...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.getCenterPoint (...', id='cvplus.img_util.getCenterPoint')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.getCenterPoint (...')
+                MixedStyledText('cvplus.img_util.getCenterPoint (...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('getCenterPoint', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('getCenterPoint')
+                  MixedStyledText(' ( bbox ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:None <desc_parameterlist>
+                    MixedStyledText(' ( bbox')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('bbox', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('bbox', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('bbox')   None:None <inline>
+                            SingleStyledText('bbox')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Function to get the center point...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Function to get the center point...')
+                MixedStyledText('Function to get the center point...')
+                  SingleStyledText('Function to get the center point...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:3 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:3 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('bbox (list): coordinate [top,rig...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('bbox (list): coordinate [top,rig...')
+                      MixedStyledText('bbox (list): coordinate [top,rig...')
+                        SingleStyledText('bbox (list): coordinate [top,rig...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:6 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:6 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:6 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('x (int) - x of center')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:6 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('x (int) - x of center')
+                            MixedStyledText('x (int) - x of center')
+                              MixedStyledText('x', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('x')
+                              SingleStyledText(' (int) - x of center')
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('y (int) - y of center')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCenterPoint:7 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('y (int) - y of center')
+                            MixedStyledText('y (int) - y of center')
+                              MixedStyledText('y', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('y')
+                              SingleStyledText(' (int) - y of center')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.getCroppedImage ...', id='cvplus.img_util.getCroppedImage')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.getCroppedImage ...')
+                MixedStyledText('cvplus.img_util.getCroppedImage ...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('getCroppedImage', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('getCroppedImage')
+                  MixedStyledText(' ( image, locations, imageSize=1...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:None <desc_parameterlist>
+                    MixedStyledText(' ( image, locations, imageSize=1...')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('image, locations, imageSize=128,...', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('image', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('image')   None:None <inline>
+                            SingleStyledText('image')
+                        SingleStyledText(', ')
+                        MixedStyledText('locations', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('locations')   None:None <inline>
+                            SingleStyledText('locations')
+                        SingleStyledText(', ')
+                        MixedStyledText('imageSize=128', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('imageSize')   None:None <inline>
+                            SingleStyledText('imageSize')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('128')   None:None <inline>
+                            SingleStyledText('128')
+                        SingleStyledText(', ')
+                        MixedStyledText('isWithPadding=False', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('isWithPadding')   None:None <inline>
+                            SingleStyledText('isWithPadding')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('False')   None:None <inline>
+                            SingleStyledText('False')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Function take image and bounding...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Function take image and bounding...')
+                MixedStyledText('Function take image and bounding...')
+                  SingleStyledText('Function take image and bounding...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:6 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:6 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('image (numpy.array): image use f...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('image (numpy.array): image use f...')
+                      MixedStyledText('image (numpy.array): image use f...')
+                        SingleStyledText('image (numpy.array): image use f...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:8 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:8 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:9 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('images (numpy.array) - array of ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getCroppedImage:9 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('images (numpy.array) - array of ...')
+                            MixedStyledText('images (numpy.array) - array of ...')
+                              MixedStyledText('images', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('images')
+                              SingleStyledText(' (numpy.array) - array of croppe...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.getDownSampleIma...', id='cvplus.img_util.getDownSampleImage')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.getDownSampleIma...')
+                MixedStyledText('cvplus.img_util.getDownSampleIma...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('getDownSampleImage', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('getDownSampleImage')
+                  MixedStyledText(' ( image, imageSize=320 ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:None <desc_parameterlist>
+                    MixedStyledText(' ( image, imageSize=320')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('image, imageSize=320', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('image', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('image')   None:None <inline>
+                            SingleStyledText('image')
+                        SingleStyledText(', ')
+                        MixedStyledText('imageSize=320', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('imageSize')   None:None <inline>
+                            SingleStyledText('imageSize')
+                          MixedStyledText('=')   None:None <inline>
+                            SingleStyledText('=')
+                          MixedStyledText('320')   None:None <inline>
+                            SingleStyledText('320')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Function take image and down sam...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Function take image and down sam...')
+                MixedStyledText('Function take image and down sam...')
+                  SingleStyledText('Function take image and down sam...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:4 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:4 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('image (numpy.array): image use f...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('image (numpy.array): image use f...')
+                      MixedStyledText('image (numpy.array): image use f...')
+                        SingleStyledText('image (numpy.array): image use f...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:6 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:6 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:7 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('resized_image (numpy.array) - cr...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.getDownSampleImage:7 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('resized_image (numpy.array) - cr...')
+                            MixedStyledText('resized_image (numpy.array) - cr...')
+                              MixedStyledText('resized_image', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('resized_image')
+                              SingleStyledText(' (numpy.array) - cropped image (...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.normalize ( imag...', id='cvplus.img_util.normalize')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.normalize ( imag...')
+                MixedStyledText('cvplus.img_util.normalize ( imag...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('normalize', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('normalize')
+                  MixedStyledText(' ( image ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:None <desc_parameterlist>
+                    MixedStyledText(' ( image')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('image', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('image', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('image')   None:None <inline>
+                            SingleStyledText('image')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Basic normalization for image Ar...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Basic normalization for image Ar...')
+                MixedStyledText('Basic normalization for image Ar...')
+                  SingleStyledText('Basic normalization for image Ar...')
+          StaticGroupedFlowables(style='block quote')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:None <block_quote>
+               > (0,0,1,0,1) block quote
+            Paragraph('image (np.array): original image...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:3 <paragraph>
+                 > (0,0,0,0,2) body
+                MixedStyledText('image (np.array): original image...')
+                  MixedStyledText('image (np.array): original image...')
+                    SingleStyledText('image (np.array): original image...')
+          DefinitionList()   None:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:4 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:4 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                List(style='bulleted')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:5 <bullet_list>
+                     > (0,0,1,0,2) bulleted list
+                  ListItem()   None:None <list_item>
+                       x (0,0,1,0,4) bulleted list item
+                       > fallback to default style
+                    ListItemLabel('•')
+                         > (0,0,1,0,6) bulleted list item label
+                           (0,0,0,0,2) list item label
+                        MixedStyledText('•')
+                          SingleStyledText('')
+                          SingleStyledText('•')
+                          SingleStyledText('')
+                    StaticGroupedFlowables()
+                         > (0,0,0,0,3) list item body
+                      Paragraph('image (np.array) - normalized im...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.normalize:5 <paragraph>
+                           > (0,0,0,0,5) list item paragraph
+                             (0,0,0,0,2) body
+                          MixedStyledText('image (np.array) - normalized im...')
+                            MixedStyledText('image (np.array) - normalized im...')
+                              MixedStyledText('image', style='strong')   None:None <strong>
+                                   > (0,0,1,0,1) strong
+                                SingleStyledText('image')
+                              SingleStyledText(' (np.array) - normalized image r...')
+      LabeledFlowable(style='object description')   /home/genieland/Documents/project/cvplus/docs/source/index.rst:0 <desc>
+           > (0,0,1,0,2) object description
+        StaticGroupedFlowables(style='signatures')
+             > (0,0,2,0,3) object signatures
+          Paragraph('cvplus.img_util.npa2base64 ( npa...', id='cvplus.img_util.npa2base64')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:1 <desc_signature>
+               > (0,0,2,0,5) object signature
+                 (0,0,0,0,2) body
+              MixedStyledText('cvplus.img_util.npa2base64 ( npa...')
+                MixedStyledText('cvplus.img_util.npa2base64 ( npa...')
+                  MixedStyledText('cvplus.img_util.', style='additional name part')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:None <desc_addname>
+                       > (0,0,3,0,6) additional name part
+                    SingleStyledText('cvplus.img_util.')
+                  MixedStyledText('npa2base64', style='main object name')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:None <desc_name>
+                       > (0,0,3,0,6) object name
+                    SingleStyledText('npa2base64')
+                  MixedStyledText(' ( npa ) ')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:None <desc_parameterlist>
+                    MixedStyledText(' ( npa')
+                      SingleStyledText(' ( ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                      MixedStyledText('npa', style='parameter list')
+                           > (0,0,3,0,6) object parameter list
+                        MixedStyledText('npa', style='parameter')   None:None <desc_parameter>
+                             > (0,0,3,0,6) object parameter
+                          MixedStyledText('npa')   None:None <inline>
+                            SingleStyledText('npa')
+                    SingleStyledText(' ) ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+        StaticGroupedFlowables(style='content')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:None <desc_content>
+             > (0,0,2,0,3) object description content
+          Paragraph('Convert image (numpy.array) to b...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:1 <paragraph>
+               > (0,0,2,0,5) object description content paragraph
+                 (0,0,0,0,2) body
+              MixedStyledText('Convert image (numpy.array) to b...')
+                MixedStyledText('Convert image (numpy.array) to b...')
+                  SingleStyledText('Convert image (numpy.array) to b...')
+          DefinitionList()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:None <definition_list>
+               > (0,0,0,0,2) definition list
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:3 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Args:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Args:')
+                      MixedStyledText('Args:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:3 <term>
+                        SingleStyledText('Args:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('npa (numpy.array): image in nump...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:4 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('npa (numpy.array): image in nump...')
+                      MixedStyledText('npa (numpy.array): image in nump...')
+                        SingleStyledText('npa (numpy.array): image in nump...')
+            LabeledFlowable()   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:5 <definition_list_item>
+                 > (0,0,0,0,4) definition list item
+              StaticGroupedFlowables(style='definition term')
+                   > (0,0,1,0,5) definition term
+                Paragraph('Returns:')
+                     > (0,0,1,0,7) definition term paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('Returns:')
+                      MixedStyledText('Returns:')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:5 <term>
+                        SingleStyledText('Returns:')
+              StaticGroupedFlowables(style='definition')   None:None <definition>
+                   > (0,0,1,0,5) definition
+                Paragraph('b64 (string) - image in base64')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/img_util.py:docstring of cvplus.img_util.npa2base64:6 <paragraph>
+                     > (0,0,1,0,7) definition paragraph
+                       (0,0,0,0,2) body
+                    MixedStyledText('b64 (string) - image in base64')
+                      MixedStyledText('b64 (string) - image in base64')
+                        MixedStyledText('b64', style='strong')   None:None <strong>
+                             > (0,0,1,0,1) strong
+                          SingleStyledText('b64')
+                        SingleStyledText(' (string) - image in base64')
+      Paragraph('Module perform background subtra...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/model/backgroundSubtractor.py:docstring of cvplus.model.backgroundSubtractor.BackgroundSubtractor:1 <paragraph>
+           > (0,0,0,0,2) body
+          MixedStyledText('Module perform background subtra...')
+            MixedStyledText('Module perform background subtra...')
+              SingleStyledText('Module perform background subtra...')
+      Paragraph('Object Classes for Bounding Box,...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/model/boundingBox.py:docstring of cvplus.model.boundingBox.BoundingBox:1 <paragraph>
+           > (0,0,0,0,2) body
+          MixedStyledText('Object Classes for Bounding Box,...')
+            MixedStyledText('Object Classes for Bounding Box,...')
+              SingleStyledText('Object Classes for Bounding Box,...')
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('		cvplus, Release 0.0.2')
+         > (0,0,0,0,2) header
+        MixedStyledText('		cvplus, Release 0.0.2')
+          MixedStyledText('		cvplus, Release 0.0.2')
+            Tab('	')
+            Tab('	')
+            Field('cvplus')
+              SingleStyledText('cvplus')
+            SingleStyledText(', ')
+            Field('Release 0.0.2')
+              SingleStyledText('Release 0.0.2')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('​.  ​		3')
+         > (0,0,0,0,2) footer
+        MixedStyledText('​.  ​		3')
+          MixedStyledText('​.  ​		3')
+            Field('​')
+              SingleStyledText('​')
+            SingleStyledText('.  ')
+            Field('​')
+              SingleStyledText('​')
+            Tab('	')
+            Tab('	')
+            Field('3')
+              SingleStyledText('3')
+---------------------------------- page 4 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Paragraph('THIS OBJECT HAS 2 MODE, INT for ...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/model/boundingBox.py:docstring of cvplus.model.boundingBox.BoundingBox:4 <paragraph>
+           > (0,0,0,0,2) body
+      Paragraph('Human SkeletonModel designed for...')   /home/genieland/.virtualenvs/tf2/lib/python3.6/site-packages/cvplus-0.0.2-py3.6.egg/cvplus/model/humanSkeleton.py:docstring of cvplus.model.humanSkeleton.HumanSkeleton2D:1 <paragraph>
+           > (0,0,0,0,2) body
+          MixedStyledText('Human SkeletonModel designed for...')
+            MixedStyledText('Human SkeletonModel designed for...')
+              SingleStyledText('Human SkeletonModel designed for...')
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('cvplus, Release 0.0.2')
+         > (0,0,0,0,2) header
+        MixedStyledText('cvplus, Release 0.0.2')
+          MixedStyledText('cvplus, Release 0.0.2')
+            Field('cvplus')
+              SingleStyledText('cvplus')
+            SingleStyledText(', ')
+            Field('Release 0.0.2')
+              SingleStyledText('Release 0.0.2')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('4		Chapter ​.  ​')
+         > (0,0,0,0,2) footer
+        MixedStyledText('4		Chapter ​.  ​')
+          MixedStyledText('4		Chapter ​.  ​')
+            Field('4')
+              SingleStyledText('4')
+            Tab('	')
+            Tab('	')
+            StringField('Chapter')
+              SingleStyledText('Chapter')
+            SingleStyledText(' ')
+            Field('​')
+              SingleStyledText('​')
+            SingleStyledText('.  ')
+            Field('​')
+              SingleStyledText('​')
+---------------------------------- page 5 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Python Module Index', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+      Field('Python Module Index')
+        SingleStyledText('Python Module Index')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    StaticGroupedFlowables()
+      IndexSection()
+           > (0,0,0,1,1) chapter
+        IndexLabel('c')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('c')
+        IndexEntry('cvplus')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus', style='domain')
+                 > (0,0,1,0,3) domain index entry name
+        IndexEntry('cvplus.color_util, XX')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.color_util, XX')
+              MixedStyledText('cvplus.color_util, XX')
+                SingleStyledText('cvplus.color_util', style='domain')
+                     > (0,0,1,0,3) domain index entry name
+                SingleStyledText(', ')
+                Reference('XX')
+                     > (0,0,0,0,1) linked reference
+                  SingleStyledText('XX')
+        IndexEntry('cvplus.cv_util, XX')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.cv_util, XX')
+              MixedStyledText('cvplus.cv_util, XX')
+                SingleStyledText('cvplus.cv_util', style='domain')
+                     > (0,0,1,0,3) domain index entry name
+                SingleStyledText(', ')
+                Reference('XX')
+                     > (0,0,0,0,1) linked reference
+                  SingleStyledText('XX')
+        IndexEntry('cvplus.img_util, XX')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.img_util, XX')
+              MixedStyledText('cvplus.img_util, XX')
+                SingleStyledText('cvplus.img_util', style='domain')
+                     > (0,0,1,0,3) domain index entry name
+                SingleStyledText(', ')
+                Reference('XX')
+                     > (0,0,0,0,1) linked reference
+                  SingleStyledText('XX')
+        IndexEntry('cvplus.model.BackgroundSubtracto...')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.BackgroundSubtracto...')
+              MixedStyledText('cvplus.model.BackgroundSubtracto...')
+                SingleStyledText('cvplus.model.BackgroundSubtracto...', style='domain')
+                     > (0,0,1,0,3) domain index entry name
+                SingleStyledText(', ')
+                Reference('XX')
+                     > (0,0,0,0,1) linked reference
+                  SingleStyledText('XX')
+        IndexEntry('cvplus.model.BoundingBox, XX')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.BoundingBox, XX')
+              MixedStyledText('cvplus.model.BoundingBox, XX')
+                SingleStyledText('cvplus.model.BoundingBox', style='domain')
+                     > (0,0,1,0,3) domain index entry name
+                SingleStyledText(', ')
+                Reference('XX')
+                     > (0,0,0,0,1) linked reference
+                  SingleStyledText('XX')
+        IndexEntry('cvplus.model.HumanSkeleton2D, XX')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.HumanSkeleton2D, XX')
+              MixedStyledText('cvplus.model.HumanSkeleton2D, XX')
+                SingleStyledText('cvplus.model.HumanSkeleton2D', style='domain')
+                     > (0,0,1,0,3) domain index entry name
+                SingleStyledText(', ')
+                Reference('XX')
+                     > (0,0,0,0,1) linked reference
+                  SingleStyledText('XX')
+        IndexEntry('cvplus.model.VideoController, XX')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.VideoController, XX')
+              MixedStyledText('cvplus.model.VideoController, XX')
+                SingleStyledText('cvplus.model.VideoController', style='domain')
+                     > (0,0,1,0,3) domain index entry name
+                SingleStyledText(', ')
+                Reference('XX')
+                     > (0,0,0,0,1) linked reference
+                  SingleStyledText('XX')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		5')
+         > (0,0,0,0,2) footer
+        MixedStyledText('		5')
+          MixedStyledText('		5')
+            Tab('	')
+            Tab('	')
+            Field('5')
+              SingleStyledText('5')
+---------------------------------- page 6 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('cvplus, Release 0.0.2')
+         > (0,0,0,0,2) header
+        MixedStyledText('cvplus, Release 0.0.2')
+          MixedStyledText('cvplus, Release 0.0.2')
+            Field('cvplus')
+              SingleStyledText('cvplus')
+            SingleStyledText(', ')
+            Field('Release 0.0.2')
+              SingleStyledText('Release 0.0.2')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('6		Python Module Index')
+         > (0,0,0,0,2) footer
+        MixedStyledText('6		Python Module Index')
+          MixedStyledText('6		Python Module Index')
+            Field('6')
+              SingleStyledText('6')
+            Tab('	')
+            Tab('	')
+            Field('Python Module Index')
+              SingleStyledText('Python Module Index')
+---------------------------------- page 7 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Index', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+      Field('Index')
+        StringField('Index')
+          SingleStyledText('Index')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    IndexSection()
+         > (0,0,0,1,1) chapter
+      Index()   index
+           > (0,0,0,0,2) index
+        IndexLabel('B')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('B')
+        IndexEntry('base642npa() (in module cvplus.i...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('base642npa() (in module cvplus.i...')
+              MixedStyledText('base642npa() (in module cvplus.i...')
+                SingleStyledText('base642npa() (in module cvplus.i...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexEntry('bbox2location() (in module cvplu...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('bbox2location() (in module cvplu...')
+              MixedStyledText('bbox2location() (in module cvplu...')
+                SingleStyledText('bbox2location() (in module cvplu...')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+        IndexEntry('bbox_iou() (in module cvplus.cv_...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('bbox_iou() (in module cvplus.cv_...')
+              MixedStyledText('bbox_iou() (in module cvplus.cv_...')
+                SingleStyledText('bbox_iou() (in module cvplus.cv_...')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+        IndexLabel('C')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('C')
+        IndexEntry('CV2PIL() (in module cvplus.img_u...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('CV2PIL() (in module cvplus.img_u...')
+              MixedStyledText('CV2PIL() (in module cvplus.img_u...')
+                SingleStyledText('CV2PIL() (in module cvplus.img_u...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexEntry('cvplus.color_util')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus.color_util')
+        IndexEntry('module, 1')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('module, 1')
+              MixedStyledText('module, 1')
+                SingleStyledText('module, ')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+        IndexEntry('cvplus.cv_util')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus.cv_util')
+        IndexEntry('module, 1')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('module, 1')
+              MixedStyledText('module, 1')
+                SingleStyledText('module, ')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+        IndexEntry('cvplus.img_util')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus.img_util')
+        IndexEntry('module, 2')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('module, 2')
+              MixedStyledText('module, 2')
+                SingleStyledText('module, ')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexEntry('cvplus.model.BackgroundSubtracto...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus.model.BackgroundSubtracto...')
+        IndexEntry('module, 3')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('module, 3')
+              MixedStyledText('module, 3')
+                SingleStyledText('module, ')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('cvplus.model.BoundingBox')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus.model.BoundingBox')
+        IndexEntry('module, 3')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('module, 3')
+              MixedStyledText('module, 3')
+                SingleStyledText('module, ')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('cvplus.model.HumanSkeleton2D')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus.model.HumanSkeleton2D')
+        IndexEntry('module, 4')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('module, 4')
+              MixedStyledText('module, 4')
+                SingleStyledText('module, ')
+                MixedStyledText('4')
+                  Reference('4')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('4')
+        IndexEntry('cvplus.model.VideoController')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('cvplus.model.VideoController')
+        IndexEntry('module, 4')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('module, 4')
+              MixedStyledText('module, 4')
+                SingleStyledText('module, ')
+                MixedStyledText('4')
+                  Reference('4')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('4')
+        IndexLabel('D')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('D')
+        IndexEntry('distanceOfpoints() (in module cv...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('distanceOfpoints() (in module cv...')
+              MixedStyledText('distanceOfpoints() (in module cv...')
+                SingleStyledText('distanceOfpoints() (in module cv...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexEntry('drawDashedLine() (in module cvpl...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('drawDashedLine() (in module cvpl...')
+              MixedStyledText('drawDashedLine() (in module cvpl...')
+                SingleStyledText('drawDashedLine() (in module cvpl...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexLabel('G')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('G')
+        IndexEntry('genColors() (in module cvplus.co...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('genColors() (in module cvplus.co...')
+              MixedStyledText('genColors() (in module cvplus.co...')
+                SingleStyledText('genColors() (in module cvplus.co...')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+        IndexEntry('getCenterPoint() (in module cvpl...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('getCenterPoint() (in module cvpl...')
+              MixedStyledText('getCenterPoint() (in module cvpl...')
+                SingleStyledText('getCenterPoint() (in module cvpl...')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('getCroppedImage() (in module cvp...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('getCroppedImage() (in module cvp...')
+              MixedStyledText('getCroppedImage() (in module cvp...')
+                SingleStyledText('getCroppedImage() (in module cvp...')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('getDownSampleImage() (in module ...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('getDownSampleImage() (in module ...')
+              MixedStyledText('getDownSampleImage() (in module ...')
+                SingleStyledText('getDownSampleImage() (in module ...')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('getTextBoxRatio() (in module cvp...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('getTextBoxRatio() (in module cvp...')
+              MixedStyledText('getTextBoxRatio() (in module cvp...')
+                SingleStyledText('getTextBoxRatio() (in module cvp...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexLabel('H')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('H')
+        IndexEntry('hsv2rgb() (in module cvplus.colo...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('hsv2rgb() (in module cvplus.colo...')
+              MixedStyledText('hsv2rgb() (in module cvplus.colo...')
+                SingleStyledText('hsv2rgb() (in module cvplus.colo...')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+#### ChainedContainer('column2')
+  (continued) StaticGroupedFlowables()
+    (continued) IndexSection()
+         > (0,0,0,1,1) chapter
+      (continued) Index()   index
+           > (0,0,0,0,2) index
+        IndexLabel('I')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+        IndexEntry('interval_overlap() (in module cv...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('interval_overlap() (in module cv...')
+              MixedStyledText('interval_overlap() (in module cv...')
+                SingleStyledText('interval_overlap() (in module cv...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexLabel('L')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('L')
+        IndexEntry('location2bbox() (in module cvplu...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('location2bbox() (in module cvplu...')
+              MixedStyledText('location2bbox() (in module cvplu...')
+                SingleStyledText('location2bbox() (in module cvplu...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexLabel('M')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('M')
+        IndexEntry('module')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            SingleStyledText('module')
+        IndexEntry('cvplus.color_util, 1')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.color_util, 1')
+              MixedStyledText('cvplus.color_util, 1')
+                SingleStyledText('cvplus.color_util, ')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+        IndexEntry('cvplus.cv_util, 1')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.cv_util, 1')
+              MixedStyledText('cvplus.cv_util, 1')
+                SingleStyledText('cvplus.cv_util, ')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+        IndexEntry('cvplus.img_util, 2')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.img_util, 2')
+              MixedStyledText('cvplus.img_util, 2')
+                SingleStyledText('cvplus.img_util, ')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexEntry('cvplus.model.BackgroundSubtracto...')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.BackgroundSubtracto...')
+              MixedStyledText('cvplus.model.BackgroundSubtracto...')
+                SingleStyledText('cvplus.model.BackgroundSubtracto...')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('cvplus.model.BoundingBox, 3')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.BoundingBox, 3')
+              MixedStyledText('cvplus.model.BoundingBox, 3')
+                SingleStyledText('cvplus.model.BoundingBox, ')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('cvplus.model.HumanSkeleton2D, 4')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.HumanSkeleton2D, 4')
+              MixedStyledText('cvplus.model.HumanSkeleton2D, 4')
+                SingleStyledText('cvplus.model.HumanSkeleton2D, ')
+                MixedStyledText('4')
+                  Reference('4')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('4')
+        IndexEntry('cvplus.model.VideoController, 4')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('cvplus.model.VideoController, 4')
+              MixedStyledText('cvplus.model.VideoController, 4')
+                SingleStyledText('cvplus.model.VideoController, ')
+                MixedStyledText('4')
+                  Reference('4')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('4')
+        IndexLabel('N')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('N')
+        IndexEntry('normalize() (in module cvplus.im...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('normalize() (in module cvplus.im...')
+              MixedStyledText('normalize() (in module cvplus.im...')
+                SingleStyledText('normalize() (in module cvplus.im...')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexEntry('npa2base64() (in module cvplus.i...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('npa2base64() (in module cvplus.i...')
+              MixedStyledText('npa2base64() (in module cvplus.i...')
+                SingleStyledText('npa2base64() (in module cvplus.i...')
+                MixedStyledText('3')
+                  Reference('3')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('3')
+        IndexLabel('P')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('P')
+        IndexEntry('PIL2CV() (in module cvplus.img_u...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('PIL2CV() (in module cvplus.img_u...')
+              MixedStyledText('PIL2CV() (in module cvplus.img_u...')
+                SingleStyledText('PIL2CV() (in module cvplus.img_u...')
+                MixedStyledText('2')
+                  Reference('2')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('2')
+        IndexLabel('R')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+            SingleStyledText('R')
+        IndexEntry('rgb2hex() (in module cvplus.colo...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+            MixedStyledText('rgb2hex() (in module cvplus.colo...')
+              MixedStyledText('rgb2hex() (in module cvplus.colo...')
+                SingleStyledText('rgb2hex() (in module cvplus.colo...')
+                MixedStyledText('1')
+                  Reference('1')
+                       > (0,0,0,0,1) linked reference
+                    SingleStyledText('1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		7')
+         > (0,0,0,0,2) footer
+        MixedStyledText('		7')
+          MixedStyledText('		7')
+            Tab('	')
+            Tab('	')
+            Field('7')
+              SingleStyledText('7')

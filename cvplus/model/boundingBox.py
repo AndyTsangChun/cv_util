@@ -20,7 +20,7 @@ class BoundingBox:
 
 	THIS OBJECT HAS 2 MODE, INT for exact coordinate and FLOAT for relative position
 	"""
-	__slots__=["__logger",'cx','cy','width','height','ymin','xmin','ymax','xmax','conf','classes','label','cname','pose','truncated','difficult']
+	__slots__=["__logger",'cx','cy','width','height','ymin','xmin','ymax','xmax','conf','classes','label','cname','pose','truncated','difficult','score']
 	def __init__(self, cx=0, cy=0, width=0, height=0, ymin=0, xmin=0, ymax=0, xmax=0, conf=None, classes=None, label=None, cname=None, pose=None, truncated=0, difficult=0, isCorners=False, isCoordinates=True, log=False, debug=False):
 		"""
 		Args:
