@@ -5,7 +5,7 @@ import numpy as np
 try:
 	from pyutil import PyLogger
 except ImportError:
-	from cvplus import PyLogger
+	from .. import PyLogger
 
 __author__ = "Andy Tsang"
 __credits__ = ["Andy Tsang"]

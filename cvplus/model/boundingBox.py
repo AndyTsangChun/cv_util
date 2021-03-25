@@ -4,8 +4,8 @@ import numpy as np
 try:
 	from pyutil import PyLogger
 except ImportError:
-	from cvplus import PyLogger
-from cvplus import getTextBoxRatio
+	from .. import PyLogger
+from .. import getTextBoxRatio
 
 __author__ = "Andy Tsang"
 __credits__ = ["Andy Tsang"]
